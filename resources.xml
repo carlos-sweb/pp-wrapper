@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/html">
+    <file>public_html/index.html</file>
+  </gresource>
+  <gresource prefix="/css">
+    <file>public_html/css/style.css</file>
+  </gresource>
+</gresources>
