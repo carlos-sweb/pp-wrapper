@@ -35,6 +35,8 @@ int main( int argc, char **argv){
       << "\"):\n  " << ex.what() << std::endl;
   }
 
+  window.set_position(Gtk::WIN_POS_CENTER);
+  window.maximize();
   window.show_all();
   app->run( window );
   exit( 0 );
