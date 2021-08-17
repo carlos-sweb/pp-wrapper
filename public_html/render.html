@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <title>Hello World!</title>
+    <style type="text/css" >{% include 'css/master.css'%}</style>
+    <style type="text/css" >{% include 'css/font-all.css'%}</style>
+  </head>
+  <body class="gray200 select-none" style="-webkit-user-select: none; " >
+    <h1 id="title" style="font-family:'JetBrains Mono'" >{{ title }}</h1>
+    <h1  >This is a title</h1>
+
+    <script type="text/javascript">
+      {% include 'node_modules/pp-is/pp-is.min.js' %}
+      {% include 'node_modules/pp-element/pp-element.min.js' %}
+      {% include 'js/app.js' %}
+    </script>
+
+  </body>
+</html>

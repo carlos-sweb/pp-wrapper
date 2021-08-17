@@ -7,10 +7,15 @@ using namespace std;
 
 int main( int argc, char **argv){
 
+  WebKitSettings *settings = webkit_settings_new();
+  webkit_settings_set_enable_javascript(settings,TRUE);
+
   Glib::RefPtr<Gtk::Application> app = Gtk::Application::create( argc, argv, "" );
   Gtk::Window window;
   window.set_default_size( 800, 600 );
-  WebKitWebView * one =  WEBKIT_WEB_VIEW( webkit_web_view_new() );
+  WebKitWebView * one =  WEBKIT_WEB_VIEW( webkit_web_view_new_with_settings(settings) );
+
+
   /*
    * the next line does some tricks :
    * GTK_WIDGET( one ) -> convert WebKitWebView to GtkWidget (one->two)
