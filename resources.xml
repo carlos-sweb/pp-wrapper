@@ -2,8 +2,5 @@
 <gresources>
   <gresource prefix="/html">
     <file>public_html/index.html</file>
-  </gresource>
-  <gresource prefix="/css">
-    <file>public_html/css/style.css</file>
-  </gresource>
+  </gresource>  
 </gresources>
