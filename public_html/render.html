@@ -2,8 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
     <title>Hello World!</title>
     <style type="text/css" >{% include 'css/master.css'%}</style>
     <style type="text/css" >{% include 'css/fonts-icons.css'%}</style>
@@ -12,12 +10,10 @@
     <h1 id="title" style="font-family:'JetBrains Mono'" >{{ title }}</h1>
     <h1  >This is a title</h1>
     <span class="material-icons" >menu</span>
-
     <script type="text/javascript">
       {% include 'node_modules/pp-is/pp-is.min.js' %}
       {% include 'node_modules/pp-element/pp-element.min.js' %}
       {% include 'js/app.js' %}
     </script>
-
   </body>
 </html>
